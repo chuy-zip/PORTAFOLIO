@@ -1,5 +1,5 @@
 #root {
-  --blue: #0B2027;
+  --blue: #050912;
   --grey: #F2F4F3;
   --l_blue: #41a7c9;
   text-align: center;
@@ -27,9 +27,9 @@
   display: flex;
   justify-content: center;
   color: var(--grey);
-  background-color: rgba(11, 32, 39, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(5, 9, 18, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -45,7 +45,7 @@
   display: block;
   color: var(--grey);
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px 10px 10px;
   text-decoration: none;
   font-size: 20px;
   transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
@@ -68,12 +68,52 @@
 #IntroSection {
   border-radius: 5px;
   height: 600px;
+  width: 100%;
+  background-color: var(--grey);
+  background-size: cover;
+  background-image: 
+  linear-gradient( to bottom, transparent, var(--blue)),
+  url('../assets/code1.png');
+  text-align: center;
+}
+
+#AboutSection {
+  border-radius: 5px;
+  margin-top: 70px;
+  height: 600px;
   width: 80%;
   background-color: var(--grey);
   opacity: 0.5;
 }
 
-#AboutSection {
+#ProjectsSection {
+  border-radius: 5px;
+  margin-top: 70px;
+  height: 600px;
+  width: 80%;
+  background-color: var(--grey);
+  opacity: 0.5;
+}
+
+#SkillsSection {
+  border-radius: 5px;
+  margin-top: 70px;
+  height: 600px;
+  width: 80%;
+  background-color: var(--grey);
+  opacity: 0.5;
+}
+
+#AwardsSection {
+  border-radius: 5px;
+  margin-top: 70px;
+  height: 600px;
+  width: 80%;
+  background-color: var(--grey);
+  opacity: 0.5;
+}
+
+#ContactSection {
   border-radius: 5px;
   margin-top: 70px;
   height: 600px;
