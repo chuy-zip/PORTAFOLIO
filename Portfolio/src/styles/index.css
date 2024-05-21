@@ -20,6 +20,19 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--grey);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--l_blue);
+}
+
 .body-class {
   margin: 0;
   display: flex;
@@ -29,8 +42,9 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 5em;
+  line-height: 0;
+  color: var(--grey);
 }
 
 button {
@@ -44,9 +58,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -55,4 +71,3 @@ button:focus-visible {
 html {
   scroll-behavior: smooth;
 }
-
