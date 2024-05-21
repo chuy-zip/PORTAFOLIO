@@ -3,8 +3,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --blue: #0B2027;
+  --grey: #F2F4F3;
+  --l_blue: #41a7c9;
+
+  color: var(--l_blue);
+  background-color: var(--blue);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,6 +16,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+}
 
 .body-class {
   margin: 0;
@@ -43,5 +50,9 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 

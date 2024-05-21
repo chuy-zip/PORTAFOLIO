@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  --blue: #0B2027;
+  --grey: #F2F4F3;
+  --l_blue: #41a7c9;
   text-align: center;
 }
 
@@ -16,4 +16,68 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.navSpace{
+  width: 100%;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  color: var(--grey);
+  background-color: rgba(11, 32, 39, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 60px;
+  width: 100%;
+  z-index: 20;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--grey);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
+
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  color: var(--l_blue);
+  text-shadow: 0 0px 10px var(--l_blue);
+}
+
+.startContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#IntroSection {
+  border-radius: 5px;
+  height: 600px;
+  width: 80%;
+  background-color: var(--grey);
+  opacity: 0.5;
+}
+
+#AboutSection {
+  border-radius: 5px;
+  margin-top: 70px;
+  height: 600px;
+  width: 80%;
+  background-color: var(--grey);
+  opacity: 0.5;
 }

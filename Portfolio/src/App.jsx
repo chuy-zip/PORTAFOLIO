@@ -1,14 +1,14 @@
 
 import '@styles/App.css'
+import Start from '@views/Start.jsx'
+import NavBar from '@components/NavBar.jsx'
 
 function App() {
 
   return (
     <>
-      <div>
-        Initial config
-      </div>
-      
+      <NavBar/>   
+      <Start/>
     </>
   )
 }
