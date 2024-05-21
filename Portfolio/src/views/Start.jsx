@@ -2,7 +2,7 @@ import Intro from '@views/Intro'
 import About from '@views/About'
 import Projects from '@views/Projects'
 import Skills from '@views/Skills'
-import Awards from '@views/Awards'
+import Achievements from '@views/Achievements'
 import Contact from '@views/Contact'
 
 function Start() {
@@ -13,7 +13,7 @@ function Start() {
                 <About />
                 <Projects />
                 <Skills />
-                <Awards />
+                <Achievements />
                 <Contact />
             </div>
         </>
