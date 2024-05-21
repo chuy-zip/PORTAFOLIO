@@ -1,4 +1,4 @@
-import pfp from '../assets/code.png'
+import pfp from '../assets/pa.jpg'
 function About() {
     return (
         <div id="AboutSection">
