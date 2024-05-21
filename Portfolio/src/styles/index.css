@@ -43,7 +43,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 h1 {
   font-size: 5em;
-  line-height: 0;
   color: var(--grey);
 }
 
