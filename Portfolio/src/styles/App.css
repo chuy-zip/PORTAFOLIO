@@ -14,6 +14,7 @@
 
 .navbar {
   display: flex;
+  flex-direction: rows;
   justify-content: center;
   color: var(--grey);
   background-color: rgba(5, 9, 18, 0.8);
@@ -26,8 +27,11 @@
   padding-bottom: 10px;
   height: 60px;
   width: 100%;
+  flex-wrap: wrap;
   z-index: 20;
 }
+
+
 
 .navbar a {
   float: left;
@@ -38,7 +42,12 @@
   text-decoration: none;
   font-size: 20px;
   transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
+}
 
+@media (max-width: 750px) {
+  .navbar {
+    height: 120px;
+  }
 }
 
 .navbar a:hover {
@@ -60,7 +69,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  height: 750px;
+  min-height: 100vh;
   width: 100%;
   background-color: var(--grey);
   background-size: cover;
@@ -73,7 +82,7 @@
 #AboutSection {
   border-radius: 5px;
   margin-top: 70px;
-  min-height: 600px;
+  min-height: 100vh;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -85,6 +94,7 @@
 
 #ProjectsSection {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   width:80%;
@@ -114,6 +124,12 @@
   transition: 0.3s;
 }
 
+@media (max-width: 420px) {
+  .projectCardContainer {
+    width: 300px;
+  }
+}
+
 .projectCardContainer:hover {
   transform: scale(1.1);
 }
@@ -131,15 +147,22 @@
   height: 212px;
 }
 
+@media (max-width: 420px) {
+  .cardHeader.photo img {
+    width: 300px;
+  }
+}
+
 #SkillsSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-image:
     linear-gradient(var(--blue), transparent, var(--blue)),
-    url('../assets/code2.jpg');
+    url('../assets/code3.jpg');
 }
 
 .TwoColumnContainer {
@@ -224,7 +247,7 @@
 #AchievementsSection {
   border-radius: 5px;
   margin-top: 30px;
-  min-height: 600px;
+  min-height: 100vh;
   width: 100%;
   background-image:
     linear-gradient(var(--blue), transparent, var(--blue)),
@@ -254,12 +277,48 @@
 }
 
 #ContactSection {
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 70px;
-  height: 600px;
+  min-height: 300px;
   width: 100%;
-  background-color: var(--grey);
-  opacity: 0.5;
+  background-color: var(--blue1);
+}
+
+.contactContainer{
+  display: flex;
+  width: 50%;
+  min-width: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactGrid {
+  min-height: 120px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 30px;
+  column-gap: 30px;
+  margin: auto;
+  padding: 0x 0 50px 0;
+}
+
+.contactGrid a{
+  padding-top: 50px;
+  font-size: 20px;
+  color: var(--grey);
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
+}
+
+.contactGrid a:hover{
+  transform: scale(1.05);
+  color: var(--l_blue);
+  text-shadow: 0 0px 10px var(--l_blue);
 }
 
 .grid-item.photo img {
@@ -269,7 +328,7 @@
 }
 
 .grid-item.text {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: var(--grey);
   line-height: 1.6;
 }
