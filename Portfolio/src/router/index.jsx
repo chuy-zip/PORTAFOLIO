@@ -3,44 +3,56 @@ import NavBar from '@components/NavBar'
 import Start from '@views/Start'
 import Project from '@views/Project'
 import { ProjectDataProvider } from '@hooks/useProjectData'
-
+import ReturnButton from '@components/ReturnButton'
 
 const routes = {
     '/': {
         component: Start,
+        isProject: false
     },
     'IntroSection': {
         component: Start,
+        isProject: false
     },
     'AboutSection': {
         component: Start,
+        isProject: false
     },
     'ProjectsSection': {
         component: Start,
+        isProject: false
     },
     'SkillsSection': {
         component: Start,
+        isProject: false
     },
     'AchievementsSection': {
         component: Start,
+        isProject: false
     },
     'ContactSection': {
         component: Start,
+        isProject: false
     },
     'ProjectsSection/Blog': {
         component: Project,
+        isProject: true
     },
     'ProjectsSection/Copython': {
         component: Project,
+        isProject: true
     },
     'ProjectsSection/Physics': {
         component: Project,
+        isProject: true
     },
     'ProjectsSection/SABOR': {
         component: Project,
+        isProject: true
     },
     'ProjectsSection/SABTE': {
         component: Project,
+        isProject: true
     },
 }
 
@@ -62,7 +74,8 @@ function Router() {
 
     return (
         <div>
-            <NavBar />
+            {routes[page].isProject ? <ReturnButton/> : <NavBar />}
+            
             <ProjectDataProvider>
                 <CurrentPage />
             </ProjectDataProvider>

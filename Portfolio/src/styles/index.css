@@ -4,7 +4,9 @@
   font-weight: 400;
 
   --blue: #050912;
+  --blue1: #0d121f;
   --grey: #F2F4F3;
+  --grey2: #6b6b6b;
   --l_blue: #41a7c9;
 
   color: var(--l_blue);
@@ -45,28 +47,6 @@ h1 {
   font-size: 5em;
   color: var(--grey);
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 html {
   scroll-behavior: smooth;
 }

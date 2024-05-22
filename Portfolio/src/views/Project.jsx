@@ -1,8 +1,6 @@
 import '@styles/Project.css'
-import pfp from '../assets/pa.jpg'
 import useNavigate from '@hooks/useNavigate';
 import useProjectData from '@hooks/useProjectData';
-import { useEffect } from 'react';
 
 function Project() {
     const { navigate } = useNavigate()
