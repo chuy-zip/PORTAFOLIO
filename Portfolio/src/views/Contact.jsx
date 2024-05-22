@@ -4,7 +4,7 @@ function Contact() {
             <h2 className='secondTitle'>Need Help with a project?</h2>
             <div className="contactContainer">
                 <h3 style={{ margin: '0px' }}>
-                    Feel free to contact me! Or visit my Gi, email or IG repository for more information
+                    Feel free to contact me! Or visit my Git, email or IG repository for more information
                 </h3>
 
                 <div className="contactGrid">

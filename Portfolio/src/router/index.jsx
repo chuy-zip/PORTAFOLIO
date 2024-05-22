@@ -1,6 +1,7 @@
 import useNavigate from '@hooks/useNavigate'
 import NavBar from '@components/NavBar'
 import Start from '@views/Start'
+import Blog from '@views/Blog'
 
 
 
@@ -26,6 +27,9 @@ const routes = {
     'ContactSection': {
         component: Start,
     },
+    'ProjectsSection/Blog': {
+        component: Blog,
+    },
 }
 
 function Router() {
@@ -34,7 +38,8 @@ function Router() {
 
     let CurrentPage = () => (
         <div className='notFoundContainer'>
-            <h1 className='h1Glow'>404 Página no encontrada</h1>
+            <h1 className='h1Glow'>404 Page Not found</h1>
+            <h3> Please enter a valid URL</h3>
         </div>
     )
 
