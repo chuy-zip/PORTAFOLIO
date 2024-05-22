@@ -6,6 +6,19 @@
   text-align: center;
 }
 
+.notFoundContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.h1Glow {
+  color: var(--grey);
+  text-shadow: 0 0px 10px var(--l_blue);
+}
+
 .secondTitle {
   font-size: 2.3em;
   color: var(--grey);
