@@ -1,13 +1,74 @@
 .projectContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    border-radius: 5px;
     min-height: 100vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+
+    margin: auto;
 }
 
 @media (max-width: 750px) {
     .projectContainer {
         margin-top: 120px;
     }
+}
+
+.projectContainer.Photo img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+.projectTittle {
+    font-size: 2.3em;
+    color: var(--grey);
+    text-shadow: 0 0px 10px var(--l_blue);
+    margin: 0px;
+}
+
+.thirdTitle {
+    color: var(--grey2);
+    font-size: 25px;
+}
+
+.routeNav {
+    color: var(--grey2);
+    text-decoration: none;
+    transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
+}
+
+.routeNav:hover {
+    color: var(--grey);
+    text-shadow: 0 0px 10px var(--l_blue);
+}
+
+.projectContainerText {
+    text-align: start;
+    font-size: 1.3em;
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+.projectDataContainer {
+    background-color: var(--blue1);
+    color: var(--grey);
+    text-align: left;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+
+}
+
+.dataCardHeader {
+    position: relative;
+    background-color: transparent;
+    font-weight: bold;
+    height: 70%;
+    width: 100%;
 }
