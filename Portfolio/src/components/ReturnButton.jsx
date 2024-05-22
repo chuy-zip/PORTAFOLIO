@@ -6,7 +6,7 @@ function ReturnButton(){
     return(
         <button 
             className="roundButton"
-            onClick={() => navigate('IntroSection')}> 
+            onClick={() => navigate('ProjectsSection')}> 
             
             {'<'} 
         
