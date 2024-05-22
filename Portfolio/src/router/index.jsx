@@ -1,8 +1,8 @@
 import useNavigate from '@hooks/useNavigate'
 import NavBar from '@components/NavBar'
 import Start from '@views/Start'
-import Blog from '@views/Blog'
-
+import Project from '@views/Project'
+import { ProjectDataProvider } from '@hooks/useProjectData'
 
 
 const routes = {
@@ -28,7 +28,19 @@ const routes = {
         component: Start,
     },
     'ProjectsSection/Blog': {
-        component: Blog,
+        component: Project,
+    },
+    'ProjectsSection/Copython': {
+        component: Project,
+    },
+    'ProjectsSection/Physics': {
+        component: Project,
+    },
+    'ProjectsSection/SABOR': {
+        component: Project,
+    },
+    'ProjectsSection/SABTE': {
+        component: Project,
     },
 }
 
@@ -51,7 +63,9 @@ function Router() {
     return (
         <div>
             <NavBar />
-            <CurrentPage />
+            <ProjectDataProvider>
+                <CurrentPage />
+            </ProjectDataProvider>
         </div>
     )
 }

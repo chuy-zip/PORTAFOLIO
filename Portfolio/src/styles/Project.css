@@ -6,8 +6,8 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     align-items: center;
-
     margin: auto;
+    margin-top: 0px;
 }
 
 @media (max-width: 750px) {
@@ -22,7 +22,6 @@
     border-radius: 10px;
     margin: auto;
 }
-
 
 .projectTittle {
     font-size: 2.3em;

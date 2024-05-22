@@ -12,7 +12,7 @@ function Projects(){
         <div className="ProjectsSectionContainer">
             <ProjectCard title={'Blog'} image={pfp} nav={navigate}/>
             <ProjectCard title={'Copython'} image={pfp} nav={navigate}/>
-            <ProjectCard title={'Physics Simulation'} image={pfp}nav={navigate}/>
+            <ProjectCard title={'Physics'} image={pfp}nav={navigate}/>
             <ProjectCard title={'SABOR'} image={pfp} nav={navigate}/>
             <ProjectCard title={'SABTE'} image={pfp} nav={navigate}/>
         </div>
