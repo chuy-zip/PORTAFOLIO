@@ -1,7 +1,7 @@
 function Contact() {
     return (
         <div id="ContactSection">
-            <h2 className='secondTitle'>Need Help with a project?</h2>
+            <h2 className='secondTitle'>Need help with a project?</h2>
             <div className="contactContainer">
                 <h3 style={{ margin: '0px' }}>
                     Feel free to contact me! Or visit my Git repository, email or IG for more information

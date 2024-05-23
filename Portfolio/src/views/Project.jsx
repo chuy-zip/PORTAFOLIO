@@ -20,7 +20,7 @@ function Project() {
                     <a href="#IntroSection"
                         className='routeNav'
                         onClick={() => navigate('IntroSection')}
-                    >ProjectsSection</a> {'>'} {ProjectData.title}
+                    >ProjectsSection</a> {'>'} {ProjectData.extension}
                 </h3>
 
                 <p>{ProjectData.description}</p>

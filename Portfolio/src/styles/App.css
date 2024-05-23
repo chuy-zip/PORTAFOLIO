@@ -139,8 +139,8 @@
   background-color: var(--blue1);
   color: var(--grey);
   text-align: left;
-  border-radius: 4px;
-  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
   width: 350px;
   height: 300px;
   margin: auto;
@@ -160,12 +160,16 @@
 .cardHeader {
   position: relative;
   background-color: transparent;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   font-weight: bold;
   height: 70%;
   width: 100%;
 }
 
 .cardHeader.photo img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   width: 351px;
   height: 212px;
 }
