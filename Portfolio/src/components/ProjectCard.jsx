@@ -1,3 +1,11 @@
+import PropTypes from 'prop-types'
+
+ProjectCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    nav: PropTypes.func.isRequired
+}
+
 function ProjectCard({ title, image, nav }) {
     return (
         <div>

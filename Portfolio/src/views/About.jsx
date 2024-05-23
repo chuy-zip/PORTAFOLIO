@@ -6,7 +6,7 @@ function About() {
                 <img src={pfp} alt="A picture of me :)" />
             </div>
             <div className="grid-item text">
-                <h2 className='secondTitle'>Who I'm I?</h2>
+                <h2 className='secondTitle'>Who I&apos;m I?</h2>
                 <p>I consider myself an adaptable and perseverant individual, 
                     always striving to perform activities to the best of my ability. 
                     I enjoy helping others and continually seek new experiences, 

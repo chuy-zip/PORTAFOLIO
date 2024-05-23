@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import useNavigate from '@hooks/useNavigate';
 
 function NavBar() {
