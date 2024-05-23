@@ -10,8 +10,26 @@
     margin-top: 0px;
 }
 
+.projectContainerColumn {
+    border-radius: 5px;
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 0;
+}
+
 .projectContainer.Photo img {
     max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.projectContainerColumn.Photo img {
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     margin: auto;
@@ -20,6 +38,13 @@
 @media (max-width: 680px) {
     .projectContainer {
         width: 90%;
+        min-height: 450px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 680px) {
+    .projectContainerColumn {
+        width: 95%;
         min-height: 450px;
         margin-top: 20px;
     }
@@ -78,10 +103,21 @@
 }
 
 .projectContainerText {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     text-align: start;
     font-size: 1.3em;
     color: var(--grey);
     line-height: 1.6;
+    min-height: 100px;
+}
+
+@media (max-width: 680px) {
+    .projectContainerText {
+        width: 95%;
+        min-height: 450px;
+    }
 }
 
 .projectDataContainer {
@@ -92,7 +128,6 @@
     width: 100%;
     min-height: 100vh;
     margin: auto;
-
 }
 
 .dataCardHeader {

@@ -4,10 +4,6 @@ import useNavigate from '@hooks/useNavigate';
 function NavBar() {
     const { page, navigate } = useNavigate();
 
-    useEffect(() => {
-        console.log(page);
-    }, [page]);
-
     return (
         <div className="navbar">
             <a 
