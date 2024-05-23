@@ -57,30 +57,25 @@ const routes = {
 }
 
 function Router() {
+    const { page } = useNavigate();
 
-    const { page } = useNavigate()
-
-    let CurrentPage = () => (
+    const CurrentPage = routes[page]?.component || (() => (
         <div className='notFoundContainer'>
-            <h1 className='h1Glow'>404 Page Not found</h1>
+            <h1 className='h1Glow'>404 Page Not Found</h1>
             <h3> Please enter a valid URL</h3>
         </div>
-    )
-
-    if (routes[page]) {
-        CurrentPage = routes[page].component
-        window.location.replace(`/#${page}`);
-    }
+    ));
 
     return (
         <div>
-            {routes[page].isProject ? <ReturnButton/> : <NavBar />}
+            {routes[page]?.isProject ? <ReturnButton /> : <NavBar />}
             
             <ProjectDataProvider>
                 <CurrentPage />
             </ProjectDataProvider>
         </div>
-    )
+    );
 }
+
 
 export default Router
