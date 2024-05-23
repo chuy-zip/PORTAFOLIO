@@ -13,5 +13,5 @@ export default defineConfig({
       '@views':'/src/views'
     }
   },
-  base:'https://chuy-zip.github.io/PORTAFOLIO/',
+  base:'/PORTAFOLIO/',
 })
