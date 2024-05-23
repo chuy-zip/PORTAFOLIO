@@ -1,9 +1,13 @@
-import pic1 from '../assets/code1.png'
-import pic2 from '../assets/code1.png'
-import pic3 from '../assets/code2.jpg'
-import pic4 from '../assets/pa.jpg'
-import pic5 from '../assets/back1.png'
-import pic6 from '../assets/code1.png'
+import pic1 from '../assets/uvg1.jpg'
+import pic2 from '../assets/comp2.jpg'
+import pic3 from '../assets/uvg2.jpg'
+import pic4 from '../assets/grad.jpg'
+import pic5 from '../assets/speech.jpg'
+import pic6 from '../assets/comp1.jpg'
+import pic7 from '../assets/cs50.jpg'
+import pic8 from '../assets/ieee.jpg'
+
+
 
 function Achievements() {
     return (
@@ -34,6 +38,14 @@ function Achievements() {
 
                 <figure className="gallery_picture">
                     <img src={pic6} className='gallery_img' />
+                </figure>
+
+                <figure className="gallery_picture">
+                    <img src={pic7} className='gallery_img' />
+                </figure>
+
+                <figure className="gallery_picture">
+                    <img src={pic8} className='gallery_img' />
                 </figure>
 
             </section>
