@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.notFoundContainer{
+.notFoundContainer {
   margin-top: 200px;
   display: flex;
   flex-direction: column;
@@ -120,7 +120,7 @@
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  width:80%;
+  width: 80%;
 }
 
 .ProjectsSectionContainer {
@@ -219,7 +219,8 @@
 }
 
 .custom-list {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
+  /* Remove default list styling */
   padding: 0;
   color: var(--grey);
   display: flex;
@@ -229,21 +230,21 @@
 }
 
 .custom-list li {
-  position: relative; 
-  padding-right: 60px; 
+  position: relative;
+  padding-right: 60px;
   padding-bottom: 10px;
-  text-align: right; 
+  text-align: right;
   font-size: 1.2em;
   text-shadow: 0px 0px 10px var(--l_blue);
 }
 
 .custom-list li::after {
   content: '•';
-  position: absolute; 
-  right: 0; 
-  color: var(--grey); 
-  font-size: 1.2em; 
-  line-height: 1; 
+  position: absolute;
+  right: 0;
+  color: var(--grey);
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 @media (max-width: 620px) {
@@ -255,7 +256,7 @@
 @media (max-width: 620px) {
   .custom-list li {
     text-align: center;
-    padding-right: 0px; 
+    padding-right: 0px;
   }
 }
 
@@ -281,7 +282,7 @@
     url('../assets/back2.png');
 }
 
-.gallery{
+.gallery {
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -291,12 +292,29 @@
   flex-wrap: wrap;
 }
 
-.gallery_picture{
+.gitIcon {
+  width: 10%;
+  height: 10%;
+  transition: transform 0.4s;
+}
+
+.gitIcon:hover{
+  transform: scale(1.15);
+}
+
+@media (max-width: 750px) {
+  .gitIcon {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+.gallery_picture {
   min-width: 200px;
   flex: 350px;
 }
 
-.gallery_img{
+.gallery_img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -313,7 +331,7 @@
   background-color: var(--blue1);
 }
 
-.contactContainer{
+.contactContainer {
   display: flex;
   width: 50%;
   min-width: none;
@@ -333,7 +351,7 @@
   padding: 0x 0 50px 0;
 }
 
-.contactGrid a{
+.contactGrid a {
   padding-top: 50px;
   font-size: 20px;
   color: var(--grey);
@@ -342,7 +360,7 @@
   transition: transform 0.4s, color 0.4s, text-shadow 0.4s;
 }
 
-.contactGrid a:hover{
+.contactGrid a:hover {
   transform: scale(1.05);
   color: var(--l_blue);
   text-shadow: 0 0px 10px var(--l_blue);

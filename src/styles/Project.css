@@ -50,11 +50,12 @@
     }
 }
 
-.projectTittle {
+.projectTitle {
     font-size: 2.3em;
     color: var(--grey);
     text-shadow: 0 0px 10px var(--l_blue);
     margin: 0px;
+    line-height: 1;
 }
 
 .thirdTitle {
@@ -109,8 +110,19 @@
     text-align: start;
     font-size: 1.3em;
     color: var(--grey);
-    line-height: 1.6;
     min-height: 100px;
+}
+
+.techContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 80%;
+    font-size: 1em;
+    color: var(--l_blue);
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 680px) {
@@ -121,13 +133,14 @@
 }
 
 .projectDataContainer {
-    background-color: var(--blue1);
     color: var(--grey);
     text-align: left;
     border-radius: 4px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100px;
     margin: auto;
+    line-height: 2;
+    margin-bottom: 50px;
 }
 
 .dataCardHeader {
