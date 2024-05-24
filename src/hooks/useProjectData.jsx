@@ -24,7 +24,7 @@ const ProjectDataProvider = ({ children }) => {
             title: 'Learn with Copython',
             extension: 'Copython',
             description: 'This project was made with the purpose of helping people who are starting their programming journey. With the help of short introductory courses on fundamental topics like data types, simple data structures, conditional statements, and an AI-powered chat, the main goal is to provide a friendly introduction to coding. This app was made with Android Studio, Jetpack Compose, Firebase, and the Palm API (the previous AI API from Google).',
-            technologies: ["Android, Google AI, Android Studio, jetpack compose, firebase"]
+            technologies: ["Android, Google AI, Android Studio, jetpack compose, firebase, kotlin"]
         },
         'ProjectsSection/Physics': {
             img: PhysicsImg,

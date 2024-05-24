@@ -147,9 +147,10 @@
   transition: 0.3s;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 435px) {
   .projectCardContainer {
     width: 300px;
+    height: 250px;
   }
 }
 
@@ -174,9 +175,10 @@
   height: 212px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 435px) {
   .cardHeader.photo img {
     width: 300px;
+    height: 180px;
   }
 }
 
@@ -218,58 +220,22 @@
   justify-content: center;
 }
 
-.custom-list {
-  list-style: none;
-  /* Remove default list styling */
-  padding: 0;
+.custom-table {
+  width: 40%;
   color: var(--grey);
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
+  border: none;
+  text-shadow: 0 0px 10px var(--l_blue);
+  font-size: 1.3em;
 }
 
-.custom-list li {
-  position: relative;
-  padding-right: 60px;
-  padding-bottom: 10px;
+.custom-table td {
+  border: none;
+  padding: 8px 16px;
   text-align: right;
-  font-size: 1.2em;
-  text-shadow: 0px 0px 10px var(--l_blue);
 }
 
-.custom-list li::after {
-  content: '•';
-  position: absolute;
-  right: 0;
-  color: var(--grey);
-  font-size: 1.2em;
-  line-height: 1;
-}
-
-@media (max-width: 620px) {
-  .custom-list {
-    align-items: center;
-  }
-}
-
-@media (max-width: 620px) {
-  .custom-list li {
-    text-align: center;
-    padding-right: 0px;
-  }
-}
-
-@media (max-width: 620px) {
-  .custom-list li::after {
-    content: '';
-  }
-}
-
-@media (max-width: 620px) {
-  .custom-list-cont {
-    justify-content: space-evenly;
-  }
+.custom-table td:nth-child(2) {
+  text-align: center;
 }
 
 #AchievementsSection {

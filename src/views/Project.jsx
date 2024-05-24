@@ -26,8 +26,7 @@ function Project() {
             <div className="projectContainerText">
                 <h2 className='projectTitle'>{ProjectData.title}</h2>
                 <h3 className='thirdTitle'>
-                    <a href="#IntroSection"
-                        className='routeNav'
+                    <a  className='routeNav'
                         onClick={() => navigate('ProjectsSection')}
                     >ProjectsSection</a> {'>'} {ProjectData.extension}
                 </h3>
