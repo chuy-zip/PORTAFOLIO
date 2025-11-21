@@ -2,6 +2,7 @@ import useNavigate from '@hooks/useNavigate'
 import NavBar from '@components/NavBar'
 import Start from '@views/Start'
 import Project from '@views/Project'
+import Paper from '@views/Paper'
 import { ProjectDataProvider } from '@hooks/useProjectData'
 import ReturnButton from '@components/ReturnButton'
 
@@ -32,6 +33,10 @@ const routes = {
     },
     'ContactSection': {
         component: Start,
+        isProject: false
+    },
+    'PAPER': {
+        component: Paper,
         isProject: false
     },
     'ProjectsSection/Blog': {

@@ -35,12 +35,18 @@ function NavBar() {
             >
                 Achievements
             </a>
-            <a 
-                className={page === 'ContactSection' ? 'selectedNav' : 'navbarStyle2'} 
+            <a
+                className={page === 'ContactSection' ? 'selectedNav' : 'navbarStyle2'}
                 onClick={() => navigate('ContactSection')}
             >
                 Contact
-            </a>   
+            </a>
+            <a
+                className={page === 'PAPER' ? 'selectedNav' : 'navbarStyle2'}
+                onClick={() => navigate('PAPER')}
+            >
+                Paper
+            </a>
         </div>
     );
 }
