@@ -6,7 +6,7 @@ function Paper() {
             <div className="paperViewer">
                 <h1 className="paperTitle">Learning Hiragana With Machine Learning</h1>
                 <iframe
-                    src="/PORTAFOLIO/paper_hiragana.pdf"
+                    src="/PORTAFOLIO/paper_hiragana_final.pdf"
                     className="pdfFrame"
                     title="Learning Hiragana With Machine Learning PDF"
                 />
