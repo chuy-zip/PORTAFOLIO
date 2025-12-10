@@ -343,3 +343,58 @@
   color: var(--grey);
   line-height: 1.6;
 }
+
+/* agregado para mejorar las skills y como se ven*/
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  color: var(--grey);
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-level-title {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--l_blue);
+  text-shadow: 0 0 8px var(--l_blue);
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  padding: 8px 0;
+  font-size: 1.1em;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 750px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-category {
+    width: 90%;
+  }
+}
